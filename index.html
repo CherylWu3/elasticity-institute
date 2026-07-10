@@ -98,15 +98,6 @@
     color: var(--sage-deep);
     margin-bottom: 1.8rem;
   }
-  h2::after {
-    content: "";
-    display: block;
-    width: 2.2rem;
-    height: 2px;
-    background: var(--rose);
-    margin-top: 0.6rem;
-  }
-
   /* ---------- intro ---------- */
   #about p { margin-bottom: 1.1rem; }
   #about p:last-child { margin-bottom: 0; }
@@ -119,19 +110,11 @@
   }
 
   /* ---------- research ---------- */
-  .paper .paper-number {
-    font-family: var(--sans);
-    font-weight: 300;
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--ink-light);
-  }
   .paper h3 {
     font-family: var(--serif);
     font-size: 1.35rem;
     font-weight: 600;
-    margin: 0.35rem 0 0.8rem;
+    margin: 0 0 0.8rem;
     color: var(--ink);
   }
   .paper .authors {
@@ -194,7 +177,7 @@
 
 <header>
   <div class="wrap">
-    <h1><span class="epsilon">ε</span>lasticity institute</h1>
+    <h1><span class="epsilon">ε</span>lasticity</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#research">Research</a>
@@ -206,7 +189,7 @@
 <section id="about">
   <div class="wrap">
     <h2>About</h2>
-    <p class="lede">The <strong>Elasticity Institute</strong> is a group of economists studying the economics of transformative AI. We produce research on key questions about AI progress to inform AI researchers, policymakers, economists, and the broader public.</p>
+    <p class="lede">The <strong>Elasticity Institute</strong> is a group of economists studying the economics of transformative AI. We produce timely and rigorous research to inform AI researchers, policymakers, economists, and the broader public about AI progress and its impacts.</p>
   </div>
 </section>
 
@@ -214,7 +197,6 @@
   <div class="wrap">
     <h2>Research</h2>
     <div class="paper">
-      <span class="paper-number">Note No. 1</span>
       <h3>The Economics of Recursive Self-Improvement</h3>
       <p class="authors">
         Tom Cunningham<sup>*</sup> &middot;
