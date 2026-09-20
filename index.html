@@ -143,6 +143,34 @@
     color: var(--ink-light);
   }
 
+  /* Publication formats distinguish the paper and executive summary. */
+  .paper + .paper {
+    margin-top: 2.1rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--line);
+  }
+  .paper .publication-type {
+    margin-bottom: 0.55rem;
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--sage-deep);
+  }
+  .paper .subtitle {
+    margin: -0.35rem 0 0.85rem;
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.55;
+    color: var(--ink-light);
+  }
+  .paper h3 a:focus-visible {
+    outline: 2px solid var(--sage-deep);
+    outline-offset: 4px;
+  }
+
   /* ---------- members ---------- */
   .members-grid {
     display: grid;
@@ -165,6 +193,14 @@
     font-weight: 300;
     font-size: 0.85rem;
     line-height: 1.3;
+  }
+  #members .role {
+    margin-top: 0.2rem;
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 0.72rem;
+    line-height: 1.35;
+    color: var(--sage-deep);
   }
   .member .affil {
     margin-top: 0.15rem;
@@ -221,6 +257,22 @@
   <div class="wrap">
     <h2>Research</h2>
     <div class="paper">
+      <p class="publication-type">Executive summary</p>
+      <h3><a href="how-to-measure-rsi.pdf" aria-label="How to Measure RSI (PDF)">How to Measure RSI</a></h3>
+      <p class="subtitle">Nine data asks for frontier AI companies</p>
+      <p class="authors">
+        Cheryl Wu<sup>*</sup> &middot;
+        Arjun Ramani<sup>*</sup> &middot;
+        Basil Halperin<sup>*</sup> &middot;
+        Lukas Althoff &middot;
+        Brian Jabarian &middot;
+        Andrew Koh &middot;
+        Phil Trammell
+        <span class="note"><sup>*</sup>Lead authors</span>
+      </p>
+    </div>
+    <div class="paper">
+      <p class="publication-type">Research note</p>
       <h3><a href="rsi-paper.pdf">The Economics of Recursive Self-Improvement</a></h3>
       <p class="authors">
         Tom Cunningham<sup>*</sup> &middot;
@@ -286,6 +338,7 @@
       <div class="member">
         <img src="assets/members/cheryl.jpg" alt="Cheryl Wu">
         <p class="name">Cheryl Wu</p>
+        <p class="role">President</p>
         <p class="affil">Yale University</p>
       </div>
     </div>
