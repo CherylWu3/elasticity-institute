@@ -110,13 +110,15 @@
     margin: 0 0 0.8rem;
     color: var(--ink);
   }
-  .paper h3 a {
+  .paper h3 a,
+  .paper .coverage a {
     color: inherit;
     text-decoration: none;
     border-bottom: 1px solid var(--line);
     transition: border-color 0.15s ease, color 0.15s ease;
   }
-  .paper h3 a:hover {
+  .paper h3 a:hover,
+  .paper .coverage a:hover {
     color: var(--sage-deep);
     border-bottom-color: var(--sage-deep);
   }
@@ -131,6 +133,14 @@
     display: block;
     margin-top: 0.5rem;
     font-size: 0.78rem;
+  }
+
+  .paper .coverage {
+    margin-top: 0.8rem;
+    font-family: var(--sans);
+    font-weight: 300;
+    font-size: 0.85rem;
+    color: var(--ink-light);
   }
 
   /* ---------- members ---------- */
@@ -224,6 +234,7 @@
         Cheryl Wu
         <span class="note"><sup>*</sup>Lead author</span>
       </p>
+      <p class="coverage">Coverage: <a href="https://www.paradigm.xyz/research/rsi/?v=20260811">Paradigm's RSI game</a></p>
     </div>
   </div>
 </section>
